@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruno Básquet Stats</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <h1 class="title">Bruno Básquet Stats</h1>
+  <div class="tabs">
+    <button class="tab-btn" onclick="showTab('live')">En Vivo</button>
+    <button class="tab-btn" onclick="showTab('individual')">Individual</button>
+    <button class="tab-btn" onclick="showTab('history')">Historial</button>
+  </div>
+
+  <!-- TAB EN VIVO -->
+  <div id="live" class="tab active">
+    <h2>Estadísticas en Vivo</h2>
+    <div class="buttons">
+      <button onclick="addStat('puntos',1)">+1</button>
+      <button onclick="addStat('puntos',2)">+2</button>
+      <button onclick="addStat('puntos',3)">+3</button>
+      <button onclick="addStat('rebotes',1)">Rebote</button>
+      <button onclick="addStat('tapas',1)">Tapas</button>
+      <button onclick="addStat('asistencias',1)">Asist.</button>
+      <button onclick="addStat('robos',1)">Robo</button>
+      <button onclick="addStat('perdidas',1)">Perdida</button>
+      <button onclick="addStat('faltas',1)">Falta</button>
+
+    </div>
+
+    <div class="panel" id="live-stats"></div>
+
+    <div class="group-actions">
+      <button class="blue" onclick="exportLive()">Exportar</button>
+      <button class="green" onclick="saveLive()">Guardar</button>
+      <button class="red" onclick="resetLive()">Reiniciar</button>
+    </div>
+  </div>
+
+  <!-- TAB INDIVIDUAL -->
+  <div id="individual" class="tab">
+    <h2>Seguimiento Individual</h2>
+
+    <div id="ind-stats"></div>
+
+    <button class="blue full" onclick="exportIndividual()">Exportar</button>
+  </div>
+
+  <!-- TAB HISTORIAL -->
+  <div id="history" class="tab">
+    <h2>Historial</h2>
+    <div id="hist-content"></div>
+  </div>
+
+</body>
+
+</html>

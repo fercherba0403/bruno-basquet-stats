@@ -1,0 +1,92 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #F57C00;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: #F57C00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  color: #F57C00;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  background: #F57C00;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.panel {
+  background: #111;
+  border: 2px solid #F57C00;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.group-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.blue {
+  background: #1E90FF !important;
+}
+
+.green {
+  background: #00C851 !important;
+}
+
+.red {
+  background: #ff4444 !important;
+}
+
+.full {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+}
